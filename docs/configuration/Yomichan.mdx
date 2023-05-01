@@ -3,120 +3,197 @@ sidebar_position: 2
 slug: /configuracion/yomichan
 ---
 
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Sin importar la etapa en la que se encuentre o la dificultad del contenido que esté consumiendo, tarde o temprano se verá en la obligación de usar un diccionario japonés. Ya sea para conocer una lectura o para entender el significado de una palabra.
+import YomichanExample from '../../assets/yomichan/example-gif.gif';
+import YomichanPopup from '../../assets/yomichan/popup_settings.png'
+import YomichanPopupAppearance1 from '../../assets/yomichan/popup_appearance1_settings.png'
+import YomichanPopupAppearance2 from '../../assets/yomichan/popup_appearance2_settings.png'
+import YomichanPopupPositionSize from '../../assets/yomichan/popup_positionSize_settings.png'
+import YomichanAdvanceSettings from '../../assets/yomichan/advance_settings.png'
+import YomichanAudio1Settings from '../../assets/yomichan/audio1_settings.png'
+import YomichanAudio2Settings from '../../assets/yomichan/audio2_settings.png'
+import YomichanExampleSettings from '../../assets/yomichan/example_settings.png';
+import YomichanImportWarning from '../../assets/yomichan/yomichan_import_warning.png'
+
+Sin importar la etapa en la que se encuentre o la dificultad del contenido que esté consumiendo, tarde o temprano se verá en la obligación de usar un diccionario japonés, ya sea para conocer una lectura o para entender el significado de una palabra.
 
 ## ¿Qué es Yomichan?
-Yomichan es una extensión de navegador que le permitirá consultar uno o varios diccionarios al tiempo para una sola palabra permitiendo que pueda ver su significado y lectura en cualquier momento. Todo desde cualquier sitio web. Yomichan cuenta también con funciones extras como integración con Anki que le permitirá ahorrar tiempo en su aprendizaje.
+Yomichan es una extensión de navegador que le permitirá consultar varios diccionarios para una palabra, pudiendo ver su significado y lectura en **cualquier momento**, en **cualquier sitio web**. Yomichan cuenta también con funciones extras como **integración con Anki** que le permitirá ahorrar tiempo al crear tarjetas para su aprendizaje.
 
-![ejemplo-gif](../../assets/yomichan/example-gif.gif)
+<div className="text--center">
+    <img className="round shadow" src={YomichanExample}/>
+</div>
 
 ## Instalación Yomichan
-Esta herramienta se encuentra disponible para cualquier navegador web basado en Chromium y Firefox. Para dispositivos móviles sólo es posible instalar Yomichan en Android a través de algún navegador que soporte el uso de extensiones como Kiwi Browser. Enlaces de la extensión aquí abajo para cada plataforma.
+Esta herramienta se encuentra disponible para cualquier navegador web basado en Chromium y Firefox. Para dispositivos móviles, solo es posible instalar Yomichan en Android a través de algún navegador que soporte el uso de extensiones como Kiwi Browser. Enlaces de la extensión aquí abajo para cada plataforma.
 
 - [Chromium](https://chrome.google.com/webstore/detail/yomichan/ogmnaimimemjmbakcfefmnahgdfhfami)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/yomichan/)
 
-Navegadores para dispositivos móvles compatibles con extensiones:
+Navegadores para dispositivos móviles compatibles con extensiones:
 - [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser) (Android)
 
 ## Primeros pasos
-### Diccionarios
-Una vez instalado Yomichan se abrirá una nueva pestaña de forma automática. La cerramos. Nuestro primer paso será instalar los diccionarios ya que, por defecto, Yomichan no cuenta con diccionarios instalados. A continuación podrá encontrar el link de descarga donde podrá encontrar todos los diccionarios disponibles en Yomichan para el idioma japonés:
+### Descarga de diccionarios
+Una vez instalado Yomichan, se abrirá una nueva pestaña de forma automática. La cerramos. Nuestro primer paso será instalar los diccionarios, ya que por defecto Yomichan no cuenta con ninguno instalado.
+
+A continuación podrá encontrar un enlace a una carpeta con todos los diccionarios disponibles en Yomichan para el idioma Japonés:
 - [Paquete de diccionarios](https://learnjapanese.link/dictionaries)
 
 :::note Información
-Los diccionarios son proporcionados por [TheMoeWay](https://learnjapanese.moe/)/Shoui.
+Estos diccionarios han sido proporcionados por la comunidad de [TheMoeWay](https://learnjapanese.moe/)/Shoui.
 :::
 
-Estos son los diccionarios que, según su caso, debe descargar. Si desea conocer en detalle qué hace cada diccionario, <a href="../utility/Diccionaries">aquí</a> encontrará más información.
+Le recomendamos que descargue los diccionarios listados a continuación:
 
 <Tabs className="unique-tabs">
-  <TabItem value="apple" label="Diccionarios para principiantes" default>
+<TabItem value="bilingual" label="Diccionarios Bilingües" default>
+<blockquote>
+<p>
+    Los diccionarios que encontrará en esta sección contienen definiciones y explicaciones en <b>Japonés-Inglés</b> o <b>Japonés-Español</b>.
+</p>
+<ul>
+    <li><a href="https://github.com/FooSoft/yomichan/raw/dictionaries/jmdict_spanish.zip">JMDict (Español)</a>: Diccionario de definiciones de <b>Japonés-Español</b>. Está algo incompleto, por lo que es recomendable incluir también el diccionario Inglés para asegurar que ninguna palabra se quede sin definición.</li>
+    <li><a href="https://drive.google.com/file/d/1Z3hayH8_FOv2v6ZsjUQRppokRiqYT2Qz/view">[Bilingual] JMDict Extra (Inglés)</a>: Con diferencia el mejor diccionario de definiciones <b>Japonés-Inglés</b>. Además, esta versión contiene frases de ejemplo para dar contexto a las definiciones. </li>
+    <li><a href="https://drive.google.com/file/d/1uE6vO1n6v7ENzfYDWFS3Kx7EnttecqeF/view">[Kanji] KANJIDIC (Inglés)</a>: Este diccionario contiene información sobre cada <b>kanji</b>, como significado, orden de trazos, frecuencia, etc.</li>
+    <li><a href="https://drive.google.com/file/d/1DRFhsmAr6wVs1SG9MRNvgkEvs6Yrpgig/view">[Grammar] Dictionary of Japanese Grammar 日本語文法辞典 (Inglés)</a>: Diccionario con explicaciones de <b>gramática</b> sacadas de la serie de libros "Diccionary of Japanese Grammar". También puede consultar las explicaciones online en el <a href="https://itazuraneko.neocities.org/grammar/dojgmain">siguiente enlace.</a></li>
+</ul>
+</blockquote>
+</TabItem>
+<TabItem value="monolingual" label="Diccionarios Monolingües">
+<blockquote>
+<p>
+    Los diccionarios de esta sección contienen definiciones y explicaciones en <b>Japonés-Japonés</b>. Si bien al principio es probable que no los utilice, es recomendable que los deje descargados de cara al futuro. Más tarde configuraremos varios perfiles de Yomichan para que priorice las definiciones Bilingües o Monolingües.
+</p>
+<ul>
+    <li><a href="https://drive.google.com/file/d/1x-lQ5lSVcyH_Nnh_NZyRVpkINg2Ez-PB/view">[Monolingual] 旺文社国語辞典 第十一版</a>: Conocido como <b>"Oukoku"</b>, este diccionario contiene definiciones muy sencillas de entender, normalmente en unas pocas líneas de texto.</li>
+    <li><a href="https://drive.google.com/file/d/1Rl8XAhM2irikVIQE9A2GVCwyDoQbMiRA/view">[Monolingual] 明鏡国語辞典 第二版</a>: Conocido como <b>"Meikyou"</b>, al igual que el Oukoku se centra en definiciones que son fáciles de leer. Además, explica diferencias entre kanjis, gramática básica, etc.</li>
+    <li><a href="https://drive.google.com/file/d/1Mmr7IIy9CWv9YlCezrOE7JK-7PBV_CyI/view">[Monolingual] デジタル大辞泉</a>: Este diccionario, <b>"Daijisen"</b>, contiene una gran cantidad de expresiones y palabras modernas, y es el que se puede consultar en la página <a href="https://dictionary.goo.ne.jp/">Goo Dictionary</a>.</li>
+    <li><a href="https://drive.google.com/file/d/1DjKn8rdTOgCZCJzKh5neFW9UsPtN7Cm8/view">[Monolingual] ハイブリッド新辞林</a>: El diccionario <b>"Shinjirin"</b> está basado en la segunda versión del "Daijirin", pero simplificado. Junto con los anteriores, se recomienda por la sencillez de sus definiciones.</li>
+    <li><a href="https://drive.google.com/file/d/1Mds3bW-vIpInkmGgdjGrgqPmorlsoU-k/view">[Monolingual] 大辞林 第三版</a>: Tercera edición del diccionario <b>"Daijirin"</b>. Muy completo en definiciones, pero algo más complicado que los anteriores. Es uno de los diccionarios incluidos por defecto en el lector de ebooks <b>Kindle.</b></li>
+    <li><a href="https://drive.google.com/file/d/1FDBTlX46gWrPSdi-esJtrBjzzC1M8cCC/view">[Monolingual] 新明解国語辞典 第七版</a>: El diccionario <b>"Shinmeikai"</b> es uno de los diccionarios más utilizados en Japón. Muy completo y actualizado, pero algunas definiciones son demasiado extensas.</li>
+    <li><a href="https://drive.google.com/file/d/1skAm_qYBSSTKaNrNN35JNAOyRVMKC1op/view">[Monolingual] 新明解四字熟語辞典</a> Diccionario de <b>"Yojigukugo"</b> de la línea "Shinmeikai".</li>
+    <li><a href="https://drive.google.com/file/d/18tGgeLHu3Ge6QU5EanTswRJP9EFe9BsM/view">[Monolingual] 学研 四字熟語辞典</a> Otro diccionario de <b>"Yojigukugo"</b> publicado por "Gakken".</li>
+    <li><a href="https://drive.google.com/file/d/1RW9R3vNxMbHRkQhfgPj6V0U8z3PXNwDh/view">[Grammar] JLPT文法解説まとめ</a>: Este diccionario contiene explicaciones de gramática en monolingüe sacadas de la página <a href="https://nihongokyoshi-net.com/">Nihongo Kyoushi</a>.</li>
 
-Los diccionarios que encontrará en esta sección contienen definiciones únicamente del Japonés al Inglés.
-
-**Carpeta Bilingual:**
-<li><code>[Bilingual] JMdict (English).zip</code></li>
-<li><code>[Bilingual] 研究社　新和英大辞典　第５版.zip</code></li>
-<li><code>[Bilingual] 新和英.zip</code></li>
-<br/>
-
-**Carpeta Pitch Accent:**
-<li><code>[Pitch Accent] アクセント辞典.zip</code></li>
-<br/>
-
-**Carpeta Kanji:**
-<li><code>[Kanji] KANJIDIC (English).zip</code></li>
-
-  </TabItem>
-  <TabItem value="orange" label="Diccionarios para Intermedios/Avanzados">
-
-  **Carpeta Bilingual:**
-  <li>Todos los diccionarios de esta carpeta.</li>
-
-  **Carpeta Monolingual:**
-  <li>Todos los diccionarios de esta carpeta.</li>
-
-  </TabItem>
-
-  <TabItem value="extras" label="Diccionarios extras" default>
-
-  </TabItem>
+</ul>
+</blockquote>
+</TabItem>
+<TabItem value="frequency" label="Diccionarios Extra">
+<blockquote>
+<p>
+    Los diccionarios de esta sección incluyen información extra, como la <b>frecuencia</b> de las palabras en diferentes contextos (novelas, anime, general, etc), gráficos y notaciones para saber el "pitch accent", o diccionarios específicos de nombres.
+</p>
+<ul>
+    <li><a href="https://drive.google.com/file/d/1lypBucHQJGNeTAOgEiR2he799iyOBiFl/view">[Pitch] アクセント辞典</a>: Diccionario que incluye información sobre el "pitch accent" de las palabras.</li>
+    <li><a href="https://drive.google.com/file/d/139YV58q0fnQqS3ExXvanaQE8Bctqo9lo/view">[Names] JMnedict</a>: Este diccionario incluye las lecturas más comúnes de diferentes nombres japoneses.</li>
+    <li><a href="https://drive.google.com/file/d/1gvyZwIT-Iy8xIzlxtDEOfXE6snGfNQ_P/view">[Freq] JPDB</a>: Diccionario de frecuencia sacado de la página <a href="https://jpdb.io/">JPDB</a>, que incluye varios animes, novelas, y live actions. </li>
+    <li><a href="https://drive.google.com/file/d/11W4fm7FIG6iexst_sIKeejv2F66i21EJ/view">[Freq] VN Freq v2</a>: Diccionario de frecuencia de Novelas Visuales.</li>
+    <li><a href="https://drive.google.com/file/d/1aCV0hPUA7F7-xCzNrvUAPc9maEptp-0W/view">[Freq] Novels</a>: Diccionario de frecuencia sacado de más de 10000 novelas.</li>
+    <li><a href="https://drive.google.com/file/d/1o7fQH9d5R1LhHOLqiqBioGv6BMcQotho/view">[Freq] Netflix</a>: Diccionario de frecuencia creado a partir de subtítulos de Netflix.</li>
+    <li><a href="https://drive.google.com/file/d/1uNIwZmEv_q3eC6GyIiDDnzccUPCrZNg3/view">[Freq] BCCWJ</a>: Diccionario de frecuencia creado a partir del <a href="https://clrd.ninjal.ac.jp/bccwj/en/">"Balanced Corpus of Contemporary Written Japanese"</a>.</li>
+</ul>
+</blockquote>
+</TabItem>
 </Tabs>
 
-#### Instalación Diccionarios
-Una vez descargue los diccionarios, se encontrará con varios archivos en formato .zip, estos son los diccionarios y **no deben ser extraídos**.
+### Instalación de diccionarios
+Una vez descargue todos los diccionarios, se encontrará con varios archivos en formato `.zip`. Estos son los diccionarios y **NO deben ser extraídos**. Para importarlos a Yomichan:
 
-  1. Presione el icono de Yomichan en la barra de herramientas del navegador y después, presione el ícono de ajustes.
-  2. Vaya al apartado “Dictionaries” y presione “Configure installed and enabled dictionaries...”. 
-  3. Presione el botón “Import” y busque el directorio donde extrajo el paquete de diccionarios. Importe los diccionarios de su elección. 
-  
-Al ser muchas entradas y diccionarios, es normal que la importación lleve un tiempo. Pero con esto concluiría la instalación de diccionarios en Yomichan.
+  1. Presione el icono de Yomichan en la barra de herramientas del navegador y después, presione el ícono de **Ajustes** (⚙️).
+  2. Vaya al apartado **"Dictionaries"** y presione `Configure installed and enabled dictionaries...`.
+  3. Presione el botón **"Import"** y busque los diccionarios en la carpeta donde lo haya descargado.
+
+Importar todos los diccionarios llevará **varios minutos**. Es importante que deje la pestaña del navegador con Yomichan abierta, y evite cerrar o apagar el ordenador.
+
+## Configuración
+
+### Importar configuración recomendada
+
+Una vez tenga todos los diccionarios descargados, puede configurar Yomichan para personalizar la forma en la que los muestra. Para ello, en las próximas secciones explicaremos varias opciones que debe cambiar para que su experiencia sea más satisfactoria.
+
+Puede descargar e importar la **configuración recomendada** desde el siguiente enlace:
+
+* [Configuración Recomendada para Yomichan](adsf)
+
+Una vez descargada, vaya al menú de Yomichan, y en la sección **"Backup"** haga clic en `Import Settings`. Seleccione el archivo descargado.
+
+:::warning Importante
+Si al importar la configuración aparece un popup que dice **Import Security Warning**, haga clic el botón rojo de **"Import"**. De otra forma fallará la integración con Anki.
+
+<div className="text--center">
+    <img className="round shadow" src={YomichanImportWarning} width="300"/>
+</div>
+:::
+
+En las siguientes secciones se explicará más en detalle las diferentes partes de la configuración que acaba importar.
+
+### Orden de prioridad de diccionarios
 
 :::tip Orden de prioridad
 Después de finalizado el proceso de importación podrá cambiar la prioridad de cada diccionario, es decir, qué diccionario verá primero. El número mayor que asigne será el primer diccionario que verá.
-
 :::
 
 ### Configuración Ajustes Avanzados
 Antes de probar Yomichan, haremos unos ajustes. Antes de seguir, verifique que tenga los ajustes avanzados activados en la esquina inferior izquierda como se aprecia en la imagen.
 
-![Ajustes-Avanzados](../../assets/yomichan/advance_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanAdvanceSettings} width="200"/>
+</div>
 
 #### Popup
 En el apartado Popup vamos a habilitar el escaneo dentro de las ventanas emergentes y eliminaremos el límite de ventanas emergentes. De esta forma podrá usar Yomichan con los diccionarios que ha importado cuantas veces quiera.
 
-![Popup-Ajustes](../../assets/yomichan/popup_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanPopup} width="600"/>
+</div>
 
 #### Popup Appearance
 En el apartado de Popup Appearance vamos a hacer más agradable la interfaz de Yomichan. Aquí, de forma opcional, vamos a activar el modo nocturno. Y vamos a permitir que todos los diccionarios se puedan colapsar.
 
-![Popup-Apariencia1](../../assets/yomichan/popup_appearance1_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanPopupAppearance1} width="600"/>
+    <img className="round shadow" src={YomichanPopupAppearance2} width="600"/>
+</div>
 
-![Popup-Apariencia2](../../assets/yomichan/popup_appearance2_settings.png)
 
 #### Popup Position & Size
 En el apartado Popup Position & Size vamos a incrementar el tamaño de la ventana emergente para mejorar la nitidez del diccionario. Muy útil sobre todo cuando se usan diccionarios monolingües. Aquí muestro mis ajustes de preferencia pero puede cambiarlos y experimentar con otros apartados según sus preferencias.
 
-![Popup-Apariencia2](../../assets/yomichan/popup_positionSize_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanPopupPositionSize} width="600"/>
+</div>
 
 #### Audio
 En este apartado vamos a configurar las fuentes de donde se obtendrán los audios de cada palabra.
 
-![Audio-Ajustes](../../assets/yomichan/audio1_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanAudio1Settings} width="600"/>
+</div>
 
-![Audio-Ajustes2](../../assets/yomichan/audio2_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanAudio2Settings} width="600"/>
+</div>
 
 ### Demostración
-Sólo queda probar Yomichan con alguna palabra en Japonés. Para usar Yomichan basta con ir a cualquier sitio web y mantener presionado `SHIFT` mientras se pasa el cursor por alguna palabra que se quiera buscar en Yomichan. Puede experimentar con esta oración: みんな恋愛の話するの好きだもんな。
+Solo queda probar Yomichan con alguna palabra en Japonés. Para usar Yomichan basta con ir a cualquier sitio web y mantener presionado `SHIFT` mientras se pasa el cursor por alguna palabra que se quiera buscar en Yomichan. Puede experimentar con esta oración: みんな恋愛の話するの好きだもんな。
 
 La ventana emergente de Yomichan quedará similar a esta imagen:
 
-![Ejemplo-Yomichan](../../assets/yomichan/example_settings.png)
+<div className="text--center">
+    <img className="round shadow" src={YomichanExampleSettings} width="800"/>
+</div>
 
 :::warning YOMICHAN EN PDFS
 En navegadores basados en Chromium no es posible utilizar Yomichan en archivos PDFs.
 :::
+
+
+## FAQ
+
+### Por qué incluir tantos diccionarios, no puedo usar solo uno?
+
+tl;dr: Hay muchas palabras en el japo, no siempre todos los diccionarios la explican de la forma más concisa, y otros añaden extras como comparación con otros kanjis y contexto. Está bien tener un diccionario favorito, pero siempre merece la pena consultar el resto.
